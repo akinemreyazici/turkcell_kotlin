@@ -45,13 +45,13 @@ fun main(args: Array<String>) {
     {
         println(map.get("name"))
     }
-    
+
     //remove
     map.remove("name")
 
     //key sorted
     var resultMap = map.toSortedMap()
-    println(resultMap)
+    println("sortedmap $resultMap")
 
     //filter
     var resultFilterValues = map.filterValues { item -> item.length > 6 } // keylerde kaydedilen değerlerin uzunluğu 6 dan büyük olanları getir

@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 
     println("---------------------")
 
-    val objB = B()
+    val objB = B("Emre")
     println("Title : B Product Sales : ${objB.sales()}")
     println(objB.create()) // Base de bulunan create fonksiyonu B class içinde override edilerek tekrardan düzenlendi
 

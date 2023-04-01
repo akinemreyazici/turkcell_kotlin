@@ -1,4 +1,4 @@
-class C : B()
+class C : B("Emre")
 {
     override fun toString(): String {
         return "{C Class Call}"
