@@ -45,7 +45,7 @@ fun main(args: Array<String>) {
     {
         println(map.get("name"))
     }
-
+    
     //remove
     map.remove("name")
 
