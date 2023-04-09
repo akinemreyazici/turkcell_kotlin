@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         var arr1 = mutableListOf<String>()
         var arr2 = mutableListOf<String>()
     }
+    // Listelerimi diğer activity classıma aktarmak için companion object içinde tanımladım.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,12 +32,12 @@ class MainActivity : AppCompatActivity() {
         txtData1 = findViewById(R.id.txtData1)
         txtData2 = findViewById(R.id.txtData2)
 
-
+    // Burada xml'de tanımladığım idleri kendi oluşturduğum değişkenlere bağladım.
 
         bttnData1.setOnClickListener {
             arr1.add("${arr1.size}) ${txtData1.text.toString()}")
-            txtData1.setText("")
-            txtData1.requestFocus()
+            txtData1.setText("") // Butona basıldıktan sonra içindeki değer sıfırlansın diye yaptım
+            txtData1.requestFocus() // İmlecin tekrar EditText'e gelmesi için kullandım.
            // Log.d("info1",arr1.get(0))
 
         }
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         bttnResult.setOnClickListener {
             var intent = Intent(this,ResultActivity::class.java)
-            startActivity(intent)
+            startActivity(intent) // Burada listeleri görüntülemek için sonraki activity'e bağlayıp start veriyorum.
         }
     }
 }

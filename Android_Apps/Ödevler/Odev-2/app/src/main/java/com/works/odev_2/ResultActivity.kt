@@ -23,5 +23,12 @@ class ResultActivity : AppCompatActivity() {
         var adapter2 = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,MainActivity.arr2)
         ListViewData2.adapter = adapter2
 
+        /*
+            ListView vb. türleri kullanmak için Adapter kullanıyoruz. Burada derste de kullandığımız
+         tek satırlı-verili simple_list_item1'i kullandım listelerdeki verilerimide MainActivity'de
+         kullandığım companion object sayesinde çağırabildim.
+
+         */
+
     }
 }
