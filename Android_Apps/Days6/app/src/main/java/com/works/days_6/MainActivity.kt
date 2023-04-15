@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.ListView
 import com.works.days_6.adapter.UserCustomAdapter
 import com.works.days_6.services.UserService
+import com.squareup.picasso.Picasso
+
 
 class MainActivity : AppCompatActivity() {
 
