@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/profile"
+        android:icon="@drawable/info_icon"
         android:title="@string/profile" />
     <item
         android:id="@+id/settings"
