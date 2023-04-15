@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.net.toUri
 import com.works.days_6.R
 import com.works.days_6.models.User
 import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide;
 
 
 class UserCustomAdapter (private val context: Activity , private val list:List<User>) : ArrayAdapter<User>(context,
@@ -28,7 +28,9 @@ class UserCustomAdapter (private val context: Activity , private val list:List<U
         r_title.text = "${user.first} ${user.last}"
         r_age.text = user.age.toString()
         r_email.text = user.email
-        Picasso.get().load(user.image).into(r_image)
+        // Picasso.get().load(user.image).into(r_image) picasso ile yapmak istersem
+        Glide.with(context).load(user.image).into(r_image) // Glide ile yapmak istersem
+
 
         return rootView
     }
