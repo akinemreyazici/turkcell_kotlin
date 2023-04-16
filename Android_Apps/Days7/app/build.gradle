@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.works.days_6'
+    namespace 'com.works.days_7'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.works.days_6"
+        applicationId "com.works.days_7"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -38,8 +38,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.squareup.picasso:picasso:2.71828' // image yüklemek için picasso kütüphanesi ekledim
-    implementation 'com.github.bumptech.glide:glide:4.15.1' // image yüklemek için glide kütüphanesini ekledim
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
