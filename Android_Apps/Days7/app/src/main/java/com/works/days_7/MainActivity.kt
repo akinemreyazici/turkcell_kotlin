@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         // WebView Url open page
         //detailWebView.settings.javaScriptEnabled = true
-        //detailWebView.webViewClient = customWebViewClient()
+        detailWebView.webViewClient = customWebViewClient()
         //detailWebView.loadUrl(url)
 
 

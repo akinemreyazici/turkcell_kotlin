@@ -7,7 +7,7 @@ class UserService {
     fun userResult(): List<User>
     {
         var list = mutableListOf<User>()
-        val u1 = User("Lonnie", "Stone", "lonnie.stone@example.com",54, "https://randomuser.me/api/portraits/men/36.jpg")
+        val u1 = User("Lonnie", "Stone", "lonnie.stone@example.com",54, "https://i.ibb.co/JFF7X5V/1664555992828.jpg")
         val u2 = User("Munir", "Jesus", "munir.jesus@example.com",40, "https://randomuser.me/api/portraits/men/72.jpg")
         val u3 = User("Victoria", "Petersen", "victoria.petersen@example.com",33, "https://randomuser.me/api/portraits/women/89.jpg")
         val u4 = User("Lilje", "Kvame", "lilje.kvame@example.com",23, "https://randomuser.me/api/portraits/women/74.jpg")
