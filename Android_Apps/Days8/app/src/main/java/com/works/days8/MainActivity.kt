@@ -12,9 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         val result = Result()
         val run = Runnable {
-            result.news()
-        } // Uzun süren kodu thread in içine alarak kod satırı serbest hale getirdik aşağıdaki "Line Call" önce çalıştı
+            val list = result.news()
+            Log.d("title",list.get(0).title)
+        }
+        // Uzun süren kodu thread in içine alarak kod satırı serbest hale getirdik aşağıdaki "Line Call" önce çalıştı
         Thread(run).start()
+
         // Log.d("Line","This Line Call")
     }
 }
