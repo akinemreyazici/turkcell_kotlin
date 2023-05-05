@@ -8,5 +8,5 @@ data class JWTData (
     val lastName: String,
     val gender: String,
     val image: String,
-    val token: String // JWT bilgisi
+    val token: String
 )

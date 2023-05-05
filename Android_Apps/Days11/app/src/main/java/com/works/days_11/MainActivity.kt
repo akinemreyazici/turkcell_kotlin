@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSend.setOnClickListener(btnClick)
 
-        val userName = sharedPreferences.getString("userName","")
+        val userName = sharedPreferences.getString("userName", "")
         editTxtUsername.setText(userName)
 
 
@@ -55,19 +55,20 @@ class MainActivity : AppCompatActivity() {
         val username = editTxtUsername.text.toString()
         val password = editTxtPassword.text.toString()
         val jwtUser = JWTUser(username, password)
+
         dummyService.login(jwtUser).enqueue(object : Callback<JWTData> {
             override fun onResponse(call: Call<JWTData>, response: Response<JWTData>) {
                 val jwtUser = response.body()
                 Log.d(
                     "status",
-                    response.code().toString()
-                ) // HTTP Status code , 200 ise yukarıdaki işlemi başarıyla tamamladı bir hataya düşmedi fakat değerin içeriğini bize vermez. 200 den başka hatalar 403 path'ında sorun olabileceğini,400  password username yanlış olabileceği hakkında bilgiler verir
+                    response.code().toString())
+                // HTTP Status code , 200 ise yukarıdaki işlemi başarıyla tamamladı bir hataya düşmedi fakat değerin içeriğini bize vermez. 200 den başka hatalar 403 path'ında sorun olabileceğini,400  password username yanlış olabileceği hakkında bilgiler verir
                 if (jwtUser != null) {
                     Util.user = jwtUser
                     Log.d("jwtUser", jwtUser.toString())
 
                     editor.putString("userName", jwtUser.username)
-                    editor.putString("firstName",jwtUser.firstName)
+                    editor.putString("firstName", jwtUser.firstName)
                     editor.commit()
 
                     val intent = Intent(this@MainActivity, Products::class.java)
