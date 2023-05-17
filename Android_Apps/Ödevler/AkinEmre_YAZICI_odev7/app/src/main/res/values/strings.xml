@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="notes">My Notes</string>
+    <string name="noteAdd">Add Note</string>
+    <string name="btnDate">Set Date</string>
+    <string name="btnSave">Save Note</string>
+    <string name="btnDelete">Delete Note</string>
+</resources>
