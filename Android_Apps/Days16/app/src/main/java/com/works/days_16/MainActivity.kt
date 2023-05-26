@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import java.util.UUID
 
 class MainActivity : AppCompatActivity() {
     lateinit var button1 : Button
@@ -18,10 +19,14 @@ class MainActivity : AppCompatActivity() {
         button3 = findViewById(R.id.btn3)
 
         val one = One()
-        one.arguments?.putString("param1","data1")
+        val oneBundle = Bundle()
+        oneBundle.putString("key1","sendData1")
+        one.arguments = oneBundle
         changeFragment(one)
+
         button1.setOnClickListener{
-            one.arguments?.putString("param1","data1")
+            oneBundle.putString("key1", UUID.randomUUID().toString())
+            one.arguments = oneBundle
             changeFragment(one)
         }
         button2.setOnClickListener{
