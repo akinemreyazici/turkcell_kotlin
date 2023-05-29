@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             {
                 Log.d("item",item.toString())
             }
-            
+
         }
         Thread(run).start()
 
