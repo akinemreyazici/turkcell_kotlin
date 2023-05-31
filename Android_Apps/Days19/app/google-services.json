@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "336380030951",
+    "project_id": "turkcell-bootcamp-d3b5c",
+    "storage_bucket": "turkcell-bootcamp-d3b5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336380030951:android:c9c3182ac046d31d955742",
+        "android_client_info": {
+          "package_name": "com.works.days19"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUxGe6hyPMOIcQldGwN8MS8e7FhEnuWAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336380030951:android:6f96d42b3aa9596c955742",
+        "android_client_info": {
+          "package_name": "com.works.days_19"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUxGe6hyPMOIcQldGwN8MS8e7FhEnuWAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
