@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtMusicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fa8ca3"
+        android:drawableEnd="@drawable/musicnote"
+        android:drawablePadding="14dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Music Name"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

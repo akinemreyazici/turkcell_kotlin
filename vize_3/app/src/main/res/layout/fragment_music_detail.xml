@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F2D5"
+    tools:context=".ui.musicDetail.MusicDetailFragment">
+
+    <ImageButton
+        android:id="@+id/MusicPauseBtn"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imgMusicPlayer"
+        app:layout_constraintStart_toStartOf="@+id/imgMusicPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/volSeekBar"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/MusicPlayBtn"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPauseBtn"
+        app:layout_constraintEnd_toStartOf="@+id/MusicPauseBtn"
+        app:layout_constraintTop_toTopOf="@+id/MusicPauseBtn"
+        tools:src="@tools:sample/avatars" />
+
+    <SeekBar
+        android:id="@+id/volSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="24sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/volumeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/volumeImageView"
+        app:layout_constraintTop_toTopOf="@+id/volumeImageView" />
+
+    <ImageView
+        android:id="@+id/volumeImageView"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMusicPlayer"
+        tools:src="@drawable/volume" />
+
+    <TextView
+        android:id="@+id/txtMusicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#F6F2D5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#fa8ca3"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMusicPlayer"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMusicTitle"
+        tools:src="@drawable/piano" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAddFav"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/unselectedstar"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPauseBtn"
+        app:layout_constraintStart_toEndOf="@+id/MusicPauseBtn"
+        app:layout_constraintTop_toTopOf="@+id/MusicPauseBtn" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDelFav"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/selectedstar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnAddFav"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnAddFav"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnAddFav"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnAddFav"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

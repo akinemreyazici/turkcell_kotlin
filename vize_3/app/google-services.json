@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283894013044",
+    "project_id": "turkcellbootcamp-vize-3",
+    "storage_bucket": "turkcellbootcamp-vize-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283894013044:android:d1aabf1196206fd6fc4521",
+        "android_client_info": {
+          "package_name": "com.works.vize3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283894013044-5btc6mav16kqt71gv37pe8g4s1ff9qld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDEU24zzhsYyfo3GW7yOoDHDhZLyTS0yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283894013044-5btc6mav16kqt71gv37pe8g4s1ff9qld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

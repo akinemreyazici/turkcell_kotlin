@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alex_brush</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/anton</item>
+        <item>@font/archivo_black</item>
+        <item>@font/bad_script</item>
+        <item>@font/baloo</item>
+        <item>@font/krona_one</item>
+        <item>@font/oswald_medium</item>
+        <item>@font/oswald_semibold</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>
